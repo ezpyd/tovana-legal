@@ -11,13 +11,13 @@
 <main>
   <p class="brand">Tovana</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: October 26, 2026 · <a href="terms.html">Terms of Use</a></p>
+  <p class="updated">Last updated: October 27, 2026 · <a href="terms.html">Terms of Use</a></p>
 
   <p>Tovana ("the app") is a daily wisdom practice developed by Ezra Halevi ("we", "us"). This policy explains exactly what Tovana does and doesn't do with your information. It is written to be read, not to hide behind legalese.</p>
 
   <h2>The short version</h2>
   <div class="card">
-    <p>Tovana is built privacy-first. Your journal, your voice recordings, and your child's name stay <strong>on your device, encrypted</strong>. The app has <strong>no analytics, no tracking, no ads, and no account</strong>. It makes no network calls on its own — the only two exceptions are actions you explicitly take, and both are described below.</p>
+    <p>Tovana is built privacy-first. Your journal, your voice recordings, and your child's name stay <strong>on your device, encrypted</strong>. The app has <strong>no analytics, no tracking, no ads, and no account</strong>. Nothing you wrote or recorded ever leaves your phone unless you send it to us as feedback. Only two things ever leave your phone, both described below: feedback you choose to send, and an automatic check of your subscription with RevenueCat (on Android once the free trial is over or you've bought a plan; on iPhone once onboarding is finished). The subscription check carries no journal entries, recordings or anything you wrote.</p>
   </div>
 
   <h2>What stays on your device</h2>
@@ -26,12 +26,11 @@
     <li>Your voice memories (recorded audio)</li>
     <li>Your favorites and reading history</li>
     <li>Your settings, including a child's name if you use Family Moment</li>
-    <li>Your trial and purchase state</li>
   </ul>
-  <p>All of it lives in an encrypted database on your phone. The encryption key is stored in your device's secure keystore. We cannot read any of it — it never reaches us, because there is no server to reach.</p>
+  <p>All of it lives in an encrypted database on your phone. The encryption key is stored in your device's secure keystore (the Android Keystore, or the iPhone Keychain), and so is the app's copy of your trial and purchase state (the official purchase record is the store's, see Purchases). We cannot read any of it — it never reaches us, because there is no server to reach.</p>
 
   <h2>Feedback you choose to send</h2>
-  <p>If you tap "Send feedback" and write us a message, that message is delivered to the developer over the internet, together with a few details that help us understand and fix what you report:</p>
+  <p>If you tap "Send feedback" and write us a message, that message  is delivered to the developer over the internet, together with a few details that help us understand and fix what you report:</p>
   <ul>
     <li>your email address, only if you type it</li>
     <li>the app version</li>
@@ -42,7 +41,10 @@
   <p>The message passes through a small relay we run on Cloudflare, which forwards it to a private Telegram channel that only the developer reads. The relay does not keep a copy. If you're offline when you press Send, the message waits on your phone in encrypted storage and goes out the next time you open the app; nothing else is ever sent this way. Feedback is the app's only user-content network action, and it never includes your journal, your recordings, your child's name, or any other data from the app.</p>
 
   <h2>Purchases</h2>
-  <p>Tovana offers a free trial and paid plans. Payments are handled entirely by Google Play — we never see your payment details. To know whether your purchase is active, the app talks to RevenueCat, a standard subscription service (a US-based processor). RevenueCat receives an anonymous device identifier, your purchase state, and (as with any internet request) your IP address, from which it derives your country — never your journal, your recordings, or anything you wrote. During an active trial the app doesn't even do that.</p>
+  <p>Tovana offers a free trial and paid plans. Payments are handled entirely by the store you bought from — Google Play on Android, the App Store (Apple) on iPhone — and we never see your payment details. To know whether your purchase is active, the app talks to RevenueCat, a standard subscription service (a US-based processor). RevenueCat receives an anonymous device identifier, your purchase/receipt state , and — as with any internet request — your IP address, from which it derives your country. It never receives your journal, your recordings, or anything you wrote. On Android, during the app's own free trial, the app doesn't even do that. On iPhone the free trial is the App Store's introductory offer, so the app checks with RevenueCat once onboarding is finished.</p>
+
+  <h2>Your rights and how long we keep things</h2>
+  <p>Because your content lives only on your device, you control it directly: edit or delete an entry in the app, or uninstall to remove everything (on iPhone a few small items stay behind, see Data retention and deletion). For the two things that do leave the device — a feedback message and your purchase state — you can ask us to access or delete them at <a href="mailto:ezra.h.halevi@gmail.com">ezra.h.halevi@gmail.com</a>. Feedback messages are kept only as long as useful for support; purchase records are kept by the store (Google Play or Apple) and RevenueCat for as long as your subscription and their policies require.</p>
 
   <h2>Backups</h2>
   <p>If you create a backup, it is a single file encrypted with a password you choose, saved wherever you decide via your phone's share/save sheet. It never touches a server of ours — we don't have one. If you lose the password, we cannot recover the backup; nobody can.</p>
@@ -63,6 +65,7 @@
 
   <h2 id="delete">Data retention and deletion</h2>
   <p>Your journal, recordings and settings are on your device, so deleting them is in your hands: delete an entry in Tovana, or uninstall the app to remove everything.</p>
+  <p>On iPhone, one thing works differently: iOS keeps an app's Keychain items after you uninstall it. Tovana's Keychain items hold no journal entries, recordings or settings — only the encryption key of the deleted database, your trial and purchase status, the review-request count, and any feedback message still waiting to be sent (it goes out if you reinstall and open the app). They never leave that iPhone (never iCloud Keychain, never a new phone). If you reinstall, your journal starts empty. To erase them too, use Settings → General → Transfer or Reset iPhone → Erase All Content and Settings.</p>
   <p>To delete feedback you sent us (with any email and phone details that came with it), or anything else we hold about you:</p>
   <ol>
     <li>Email <a href="mailto:ezra.h.halevi@gmail.com?subject=Tovana%20data%20deletion">ezra.h.halevi@gmail.com</a> with the subject "Tovana data deletion".</li>
@@ -70,7 +73,7 @@
     <li>We delete it within 30 days and reply to confirm.</li>
   </ol>
   <p>You can also ask us, at the same address, to see what we hold about you — a feedback message and your purchase state are the only things that leave your device.</p>
-  <p>Feedback is otherwise kept only as long as it's useful for support. Purchase records are kept by Google Play and RevenueCat as their own policies require.</p>
+  <p>Feedback is otherwise kept only as long as it's useful for support. Purchase records are kept by the store (Google Play or Apple) and RevenueCat as their own policies require.</p>
 
   <h2>Children</h2>
   <p>Family Moment is designed for parents to use <em>together with</em> their children. The app is directed at adults; a child's name entered by a parent stays on the device like everything else.</p>
@@ -79,7 +82,7 @@
   <p>If the app's behavior ever changes in a way that matters here, this policy will be updated and the "Last updated" date will change. The promise this policy is built on — your content stays on your device — is the product's foundation, not a temporary setting.</p>
 
   <h2>Contact</h2>
-  <p>Questions about privacy: <a href="mailto:ezra.h.halevi@gmail.com">ezra.h.halevi@gmail.com</a>, or the Send feedback button inside the app.</p>
+  <p>Questions about privacy: <strong><a href="mailto:ezra.h.halevi@gmail.com">ezra.h.halevi@gmail.com</a></strong>, or the Send feedback button inside the app.</p>
 
   <hr class="divider">
   <footer>Tovana — a daily ritual of deep, actionable wisdom. · <a href="terms.html">Terms of Use</a></footer>
